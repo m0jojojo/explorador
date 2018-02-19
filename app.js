@@ -51,6 +51,6 @@ app.use(indexRoutes);
 app.use(campgroundRoutes);
 app.use(commentRoutes);
 //Creating a local server!
-app.listen(6900,function(){
-	console.log("Explorador running on port:6900"); 
+app.listen(app.get('port'),function(){
+	console.log("Explorador running on port: ",app.get('port')); 
 });
