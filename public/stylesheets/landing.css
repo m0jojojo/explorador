@@ -1,0 +1,26 @@
+body{
+	background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;   /*giving z index to some element will make it appear coming out of the scree, i.e a 3D effect*/
+  position: relative;   /*in order to give a z index position should not be static(DEFAULT)*/
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;  /*take up the entire page*/
+  height: 100%;  /*take up the entire page*/
+  top: 0;
+  left: 0;
+  z-index: 0;  /*this will make sure the background images are behind the content with z-index 1*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
