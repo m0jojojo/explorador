@@ -50,7 +50,6 @@ app.use(function(req,res,next){
 app.use(indexRoutes);
 app.use(campgroundRoutes);
 app.use(commentRoutes);
-//Creating a local server!
-app.listen(app.get('port'),function(){
-	console.log("Explorador running on port: ",app.get('port')); 
-});
+
+
+app.listen(process.env.PORT || 5000)
