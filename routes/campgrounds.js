@@ -33,10 +33,12 @@ router.post("/campgrounds",middleware.isLoggedIn,function(req,res){
 		id: req.user._id,
 		username: req.user.username
 	};
+	var price=req.body.price;
 	///getting data from FORM
 	var newCampground={
 		name: name,
 		image: image,
+		price:price,
 		description:description,
 		author:author
 	};
