@@ -52,4 +52,7 @@ app.use(campgroundRoutes);
 app.use(commentRoutes);
 
 
-app.listen(process.env.PORT || 5000)
+app.listen(process.env.PORT || 5000);
+// app.listen(6900,function(){
+// 	console.log("Server Started!!");
+// });
